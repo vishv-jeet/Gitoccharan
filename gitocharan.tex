@@ -1,0 +1,74 @@
+\documentclass[12pt]{book}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[english]{babel} 
+%\setmainfont[Script=Devanagari]{Lohit Devanagari}
+\newfontfamily\sanskrit[Script=Devanagari]{Lohit Devanagari}
+\usepackage{tocloft}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\fancyhead{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyhead[LE,RO]{\sanskrit गीतोच्चारण}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\tiny \bf Copyrighted Material, All Rights Reserved} % other info in "inner" position of footer line
+
+
+\usepackage{eso-pic}
+\AddToShipoutPictureBG*{%
+	\AtTextLowerLeft{\makebox[\textwidth][r]{%
+			\includegraphics[keepaspectratio]{ISBN}}}}
+
+\begin{document}
+\include{introduction.tex}
+\tableofcontents
+\include{chapter1.tex}
+\include{chapter2.tex}
+\include{chapter3.tex}
+\include{chapter4.tex}
+\include{chapter5.tex}
+\include{chapter6.tex}
+\include{chapter7.tex}
+\include{chapter8.tex}
+\include{chapter9.tex}
+\include{chapter10.tex}
+\include{chapter11.tex}
+\include{chapter12.tex}
+\include{chapter13.tex}
+\include{chapter14.tex}
+\include{chapter15.tex}
+\include{chapter16.tex}
+\include{chapter17.tex}
+\include{chapter18.tex}
+
+\begin{center}
+ॐ
+
+शान्ताकारं भुजग शयनं पद्मनाभं सुरेशम्  ।  
+
+विश्वाधारं गगन सदृशं मेघवर्णं शुभाङ्गम्  ।  
+
+लक्ष्मीकान्तं कमल नयनं योगिभि-अर्ध्यान-गम्यम्  ।  
+
+वन्दे विष्णुं भव भयहरं सर्व-लोकैक-नाथम्  ॥ 
+
+\end{center}
+\newpage
+
+\chapter*{}
+\begin{center}
+\includegraphics[scale=0.2,keepaspectratio]{eps3}
+\end{center}
+
+\AddToShipoutPictureBG*{%
+	\AtTextLowerLeft{\makebox[\textwidth][r]{%
+			\includegraphics[keepaspectratio]{ISBN}}}}
+
+\end{document}
+
+
